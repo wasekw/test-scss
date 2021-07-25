@@ -1,0 +1,32 @@
+.advantage {
+  padding-top: 94px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__box {
+    @extend %align;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bgd-button-color);
+    border-radius: 4px;
+  }
+  &__picture {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    @include font($fs: 14px, $lh: 1.14);
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+}
+.advantage__list .advantage__item + .advantage__item {
+  margin-left: 30px;
+}

@@ -1,0 +1,39 @@
+.hero {
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background/herobackground.jpg);
+  max-width: 1600px;
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+
+  background-color: var(--main-hiro-color);
+  text-align: center;
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include font($fw: 900, $fs: 44px, $lh: 1.36);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+}
+
+.button__hero {
+  padding: 10px 32px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
+}
